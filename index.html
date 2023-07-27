@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo/style.css">
+    <link rel="stylesheet" href="Estilo/mediaqueries.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>Verificador de Identidade</title>
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Verificador de Identidade</h1>
+    </header>
+    <section>
+        <div>
+            <div class="anonasc">
+                <p>Ano de nascimento:</p>
+                <input type="number" name="anonasc" id="ianonasc">
+            </div>
+            <div><p id="erro">Insira uma data válida!</p></div>
+
+            <div class="sexo">
+                <label for="ifem">Feminino</label>
+                <input type="radio" name="radsex" id="ifem">
+                <label for="imasc">Masculino</label>
+                <input type="radio" name="radsex" id="imasc">
+                </p>
+            </div>
+            <div class="botao">
+                <p>
+                    <button type="button" onclick="verificar()">Verificar</button>
+                </p>
+            </div>
+        </div>
+        <div id="res">
+            <p id="resultado">Preencha as opções acima para ver o resultado!</p>
+            <div><p id="erro2"></p></div>
+        </div>
+        <div><img id="foto" src="" alt=""></div>
+    </section>
+    <footer>
+        <p>&copy;JoãoGuilherme</p>
+    </footer>
+    <audio src="Audio/METAMORPHOSIS-edit.mp3" id="musica"></audio>
+
+    <script src="Codigos/scripts.js"></script>
+</body>
+</html>

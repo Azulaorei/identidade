@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+body {
+    background-color: rgb(24, 136, 206);
+}
+header {
+    color: white;
+    text-align: center;
+}
+header h1 {
+    padding: 20px;
+    font-size: 3em;
+}
+section {
+    margin: auto;
+    background-color: white;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    padding: 15px;
+    width: 480px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.322);
+}
+div.anonasc {
+    text-align: center;
+    margin-top: 10px;
+}
+div.anonasc input[type=number] {
+    text-align: center;
+    width: 100px;
+    margin-bottom: 10px;
+}
+div.anonasc input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+div.sexo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.botao {
+    display: flex;
+    justify-content: center;
+}
+button {
+    font-size: 1.4em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+p#erro {
+    display: none;
+    color: red;
+}
+p#erro2 {
+    display: none;
+    color: red;
+    text-align: center;
+}
+p#resultado {
+    margin-bottom: 10px;
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+div#res {
+    text-align: center;
+}
+img {
+    display: none;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    animation-name: imagem;
+    animation-duration: 1.6s;
+}
+@keyframes imagem {
+    from {
+        transform: rotateY(0deg);
+    } 
+    to {
+        transform: rotateY(-720deg);
+    }
+}
